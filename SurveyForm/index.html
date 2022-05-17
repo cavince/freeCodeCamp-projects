@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Generic Lawn Service</h1>
+    <h2 id="subtitle">Customer Satisfaction Survey</h2>
+    <p id="description"><em>We would love to hear from you!</em></p>
+    <form id="survey-form" action="">
+      <fieldset>
+        <label id="name-label">
+          Your Name: <input type="text" id="name" placeholder="required" required />
+        </label>
+        <label id="email-label">
+          Your Email: <input type="email" id="email" placeholder="required" required />
+        </label>
+        <label id="number-label">
+          How long have you been a customer? <input type="number" id="number" min="0" max="100" placeholder="0 years"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="dropdown-label">
+          How would you rate your overall satisfaction with our service?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Very Satisfied</option>
+          <option value="2">Satisfied</option>
+          <option value="3">Neutral</option>
+          <option value="4">Unsatisfied</option>
+          <option value="5">Very Unsatisfied</option>
+        </select>
+        </label>
+        <br>
+        <label id="checkbox-label">
+          Which of our services have you had in the past?
+        <label>
+          <input type="checkbox" value="Lawn Mowing" class="inline" /> Lawn Mowing
+        </label>
+        <label>
+          <input type="checkbox" value="Lawn Care" class="inline" /> Lawn Care
+        </label>
+        <label>
+          <input type="checkbox" value="Pest and Weed Treatment" class="inline" /> Pest and Weed Treatment
+        </label>
+        <label>
+          <input type="checkbox" value="Tree Care" class="inline" /> Tree Care
+        </label>
+        <label>
+          <input type="checkbox" value="Tree Removal" class="inline" /> Tree Removal
+        </label>
+        </label>
+        <label>
+          <input type="checkbox" value="Mulching" class="inline" /> Mulching
+        </label>
+        <label>
+          <input type="checkbox" value="Landscaping" class="inline" /> Landscaping
+        </label>
+        <br>
+        <label id="radio-label">
+          Would you recommend us to a friend?
+          <br><br>
+          <input type="radio" name="radio-option" class="inline" value="Yes"/> Yes
+        </label>
+        <label>
+          <input type="radio" name="radio-option" class="inline" value="No"/> No
+        </label>
+        <br>
+        <label id="textarea-label">
+          Additional Comments:
+          <textarea></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Thank you!" />
+    </form>
+  </body>
+</html>
